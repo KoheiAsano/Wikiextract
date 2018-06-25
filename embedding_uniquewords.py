@@ -1,47 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-News の専門用語を抽出して、元ある辞書と合わせた言葉ベクトル空間(１００次元)への投影
+テキストの専門用語を抽出して、設定したベンチマークと合わせた言語ベクトル空間(１００次元)への投影
 
-python3 embedding_news "folder_name"
+python3 embedding_uniquewords.py "folder_name"
 """
 
 #caluclate processing time
 import time
 start = time.time()
+import sys, glob
 
 
-#define functioin to "Exclude" except political news 
-with open("../dic/spet_words.txt", mode='r',encoding = "utf-8") as f:
-    s_d = f.read()
-    spet_words = s_d.split("\n")
-    for word in spet_words:
-        if word in  ["","\t","\n"]:
-            spet_words.remove(word)
-
-def IsNotPolitical(title,content):
-    
-    for etsp in spet_words:
-        if etsp in title:
-#            print(etsp,title)
-            return True
-        elif etsp in content:
-#            print(etsp,title)
-            return True
-        elif content == "":
-            return True
-        
-    return False
-
-import sys
-import glob
-
-#get command argument such as "python embedding_news.py 02"
+#get command argument such as "python embedding_uniquewords.py 02"
 p = sys.argv
-news_csv_path = 'newstext/' +  p[1] + '/*.csv'
+news_csv_path =  p[1] + '/*.csv'
 CSVfiles = glob.glob(news_csv_path)
-
-
-
 
 
 
@@ -49,8 +22,8 @@ CSVfiles = glob.glob(news_csv_path)
 import pandas as pd
 from normalize import normalize
 
-political_news = pd.DataFrame()
-#define set to exclude deplication of news title
+totalcorpus = pd.DataFrame()
+#define set to exclude deplication of title
 titleset = set()
 
 for CSVname in CSVfiles:
@@ -62,7 +35,7 @@ for CSVname in CSVfiles:
     #半角→全角,low→upper, digits→0   ex. normalize(Asano8)=ａｓａｎｏ0
     raw_newsdf["title"] = [normalize(t) for t in raw_newsdf["title"]]
     raw_newsdf["content"]  = [normalize(c) for c in raw_newsdf["content"]]
-    
+
     for news_i in raw_newsdf.index:
         
         #exclude duplication
@@ -71,27 +44,19 @@ for CSVname in CSVfiles:
             continue
         titleset.add(raw_newsdf["title"][news_i])
 
-            
-        if IsNotPolitical(raw_newsdf["title"][news_i],raw_newsdf["content"][news_i]):
-            raw_newsdf = raw_newsdf.drop(news_i)
-            continue
-    political_news = pd.concat([political_news,raw_newsdf])
+    totalcorpus = pd.concat([totalcorpus,raw_newsdf])
     
-political_news = political_news.reset_index(drop=True)
+totalcorpus = totalcorpus.reset_index(drop=True)
 
 
 
 #reading based dictionaly
-prodicdf = pd.read_csv('../dic/news_proper_pn.txt',
+benchdf = pd.read_csv('./benchmark.txt',
                         sep=',',
                         encoding='utf-8',
                         index_col=False,
                        )
-gendicdf = pd.read_csv('../dic/news_general_pn.txt',
-                        sep=',',
-                        encoding='utf-8',
-                        index_col=False,
-                       )
+
 
 
 import re
@@ -121,30 +86,28 @@ def get_prolist(text):
         #Exclude overlap with based dictionaly
         if str(d['BaseForm']) == "＊":
             d['BaseForm'] = d['Surface']
-        if d['BaseForm'] in list(prodicdf["BaseForm"]):
-            continue
-        if d['BaseForm'] in list(gendicdf["BaseForm"]):
+        if d['BaseForm'] in list(benchdf["BaseForm"]):
             continue
         prolist.append(d['BaseForm'])
     return(prolist)
 
 #get newspronouns
-NewsPronons = []
-for i in political_news.index:
-    pro_list = get_prolist(political_news["content"][i])
-    NewsPronons += pro_list
+UniquePronons = []
+for i in totalcorpus.index:
+    pro_list = get_prolist(totalcorpus["content"][i])
+    UniquePronons += pro_list
 
 
 
 #exclude words which don't appear more than "10" times
-tempdf = pd.DataFrame({"BaseForm":NewsPronons,"dummy":NewsPronons})
+tempdf = pd.DataFrame({"BaseForm":UniquePronons,"dummy":UniquePronons})
 
 new_words = tempdf.groupby(["BaseForm"],as_index = False)
 counted_vocab = new_words.count().sort_values(by='dummy', ascending=False)
 new_vocab = counted_vocab.rename(columns={'dummy': 'Frequency'})
 new_vocab = new_vocab[new_vocab.Frequency >= 10]
 
-target_pronouns = [pro for pro in NewsPronons if pro in list(new_vocab["BaseForm"])]
+target_pronouns = [pro for pro in UniquePronons if pro in list(new_vocab["BaseForm"])]
 
 
 
@@ -206,25 +169,23 @@ def get_word2vec_vocab(text):
             
         if d['BaseForm'] in list(new_vocab["BaseForm"]):
             targetlist.append(d['BaseForm'])
-        if d['BaseForm'] in list(prodicdf["BaseForm"]):
-            targetlist.append(d['BaseForm'])
-        if d['BaseForm'] in list(gendicdf["BaseForm"]):
+        if d['BaseForm'] in list(benchdf["BaseForm"]):
             targetlist.append(d['BaseForm'])
     return(targetlist)
 
 
 w2v_target_list = []
-for i in political_news.index:
-    w2v_target_article = get_word2vec_vocab(political_news["content"][i])
+for i in totalcorpus.index:
+    w2v_target_article = get_word2vec_vocab(totalcorpus["content"][i])
     w2v_target_list.append(w2v_target_article)
 
-news_w2v = models.Word2Vec(w2v_target_list, size=100, window=5, workers=8, min_count=1)
-words = list(news_w2v.wv.vocab)
+unique_w2v = models.Word2Vec(w2v_target_list, size=100, window=5, workers=8, min_count=1)
+words = list(unique_w2v.wv.vocab)
 print(words)
 print('Vocabulary size: %d' % len(words))
 filename = 'data/news_embedding.txt'
-news_w2v.wv.save_word2vec_format(filename, binary=False)
-news_w2v.save("data/forplot.model")
+unique_w2v.wv.save_word2vec_format(filename, binary=False)
+unique_w2v.save("data/forplot.model")
 
 
 elapsed_time = time.time() - start
