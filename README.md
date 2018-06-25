@@ -9,7 +9,7 @@
 
 - Vis_Embedding.ipynb  
 embedding_uniquewords.pyで生成したベクトルを二次元に落としmatplotlibでplot  
-![example](example.pdf)
+![example](example.png)
 - normalize.py  
 上記プログラムで利用する正規化プログラム(全角、小文字スペル、数字を0へ置換)  
 
