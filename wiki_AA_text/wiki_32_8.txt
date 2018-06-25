@@ -1,0 +1,9 @@
+Document Object Model
+Document Object Model (DOM) は、HTML文書やXML文書を各種プログラムから利用するための仕組みである。WHATWGがLiving Standardとして定義している。
+WHATWG以前はW3Cが仕様を策定しており、Level 1からLevel 4まで勧告している。
+XMLを読み込むAPIであるSAXと異なり、XMLデータをツリー構造として扱う事ができる。ただし、通常の場合対象のXML文書を全て読み込んでからの扱いを前提とするため、動作速度が遅かったり、メモリーの使用量が大きくなるといった欠点もある。
+W3Cでは仕様を定義しているのみで、特定のプログラム言語を対象としたものではない。
+DOMの実装は各メーカーに委ねられており、DOMを実装したXMLパーサが各メーカーから提供されている。
+W3Cによって、Level 1からLevel 4まで勧告されており、XML文書を扱う「Core」、HTML文書を扱う「HTML」等のモジュールに分かれている。
+また、正式な仕様ではないが、Level 1 以前からある各ブラウザの独自実装を DOM Level 0 と呼称する場合がある。
+DOM Level 4は、すでに活動を開始していたWHAWG DOM Living Standardの当時の版のスナップショットと言えるものである。

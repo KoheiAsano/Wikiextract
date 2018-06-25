@@ -1,0 +1,4 @@
+USB On-The-Go
+USB On-The-Go（略してUSB OTG）は、USB機器どうしを直接接続するインタフェース規格である。パソコン等をホストとせずに、動作時にホスト機器を動的に切り替える機能を拡張したもの。
+IEEE 1394のように直接接続できるので、いろいろな機器に応用できる。
+2001年12月18日に発行されたUSB OTG 2.0 Revision 1.0 は High Speed (480Mbps) がオプション扱いとなっていたが、2009年5月8日に発行された USB OTG 2.0 Revision 2.0 では High Speed を含み、2011年7月1日に発行された USB OTG 3.0 では SuperSpeed (5Gbps) を含む。

@@ -1,0 +1,19 @@
+AAC
+Advanced Audio Coding (AAC) は、不可逆のディジタル音声圧縮を行う音声符号化規格のひとつである。MP3の後継フォーマットとして策定され、一般的にAACは同程度のビットレートであればMP3より高い音声品質を実現している。
+AACはISOとIECにより、MPEG-2およびMPEG-4仕様の一部として標準化された。MPEG-4 Audio内のHE-AAC(High Efficiency Advanced Audio Coding)として知られるAACの一部は、DAB+やDigital Radio Mondiale、モバイルテレビジョン規格のDVB-やATSC-M/Hのようなディジタル無線規格においても採用されている。
+AACは一つのストリームに、48の全帯域幅(最大96kHz)音声チャンネルを持たせることができ、さらに、16の低周波効果音(LFE、120Hzまで)チャンネルと16の対話チャンネル、および16のデータストリームも含めることができる。ステレオの音質は96kbpsのジョイントステレオモードで適度な要件を満たすことができるが、Hi-Fi透明性（低雑音性）のためには、少なくとも128kbpsのデータレート(VBR)が必要である。MPEG-4 Audioによる検証では、AACが128kbpsのステレオおよび320kbpsの5.1チャンネルオーディオにおいてITUが「透明的」として規定している要件を満たしていることが示されている。
+AACはYouTube、iPhone、iPod、iPad、Nintendo DSi、Nintendo 3DS、iTunes、DivX Plus Web Player、PlayStation 3、ノキアのSeries 40携帯電話における既定もしくは標準の音声フォーマットである。PlayStation Vita、Wii、 ソニーのウォークマンMP3シリーズとその後継機種でもサポートされている。AACはインダッシュの車載オーディオシステムのメーカによってもサポートされている。
+AAC（Advanced Audio Coding, 先進的音響符号化）とは1997年にISO/IEC JTC 1のMoving Picture Experts Group (MPEG) において規格化された音声圧縮方式のことである。
+MP3等のMPEG-1 Audioや、MPEG-2 Audio BC (Backward Compatible) を超える高音質・高圧縮を目的に標準化された方式である。
+MPEG-2 Audio BCとは異なり、符号化アルゴリズムにおいてMPEG-1 Audioとの互換性はない。ファイルに格納した場合の拡張子は、「*.mov,*.mp4,*m2ts,*.m4a,*.m4b,*.m4p,*.3gp,*.3g2」または「*.aac」。なお、放送ではADTS (Audio Data Transport Stream) と呼ばれるヘッダ形式で伝送されることが多い。サンプリング周波数はMP3が最大48kHzまでだったのに対し、AACは最大96kHzまで対応している。
+AACにはMPEG-2 AAC (ISO/IEC 13818-7) とMPEG-4 AAC (ISO/IEC 14496-3, Subpart 4) とが存在する。MPEG-4 AACは、MPEG-2 AACにPNSやLTPといった追加技術を利用可能としたものであるが、基本的なアルゴリズム自体に違いはなく、追加技術を使用しなければヘッダの一部分が1ビット異なるだけであり、通常の使用では区別する必要はほとんどない。
+AACにも拡張機能が使用可能かどうかによって幾つかの種類があるが、一般的に利用されているのはAAC-LC (AAC Low Complexity) と呼ばれる基本機能だけを用いるものである。
+さらにMPEG-4 AAC-LTP（後述）をプロファイルに数える場合がある。
+MPEG-4 AAC v3においては、SBR (Spectral Band Replication) やパラメトリックステレオ (Parametric Stereo) 技術によって64 kbpsを下回るような超低ビットレートにおける品質を改善するHE-AAC (High-Efficiency AAC) が追加承認されている (AAC-LC, HE-AAC (aacPlus, AAC+SBR), HE-AAC Version 2 (aacPlus Version 2, Enhanced aacPlus, AAC+SBR+PS))。
+MPEG-2 AACは主に日本のBSデジタル放送と地上デジタル波放送のISDB規格やSD-AudioのAACフォーマット、ヨーロッパ圏のDVDなどで利用できる。北米や日本のDVDでは、AACではなくAC-3やDTSが採用されている。
+MPEG-4 AACはiPodなどのデジタルオーディオプレーヤー、PlayStation PortableやDSiなどのゲーム機、携帯電話等、多くの機器やソフトウェアがサポートしている。また、第三世代携帯電話用の動画フォーマットである3GPPや3GPP2の音声圧縮方式としても採用されている。
+音楽配信サービスでは、パソコン、iPod向けのiTunes Storeや携帯電話向けの着うたでAACが採用されている。ただし、これらのファイルの一部にはDRMが導入され、同じAACであるが互換性がないものがある。AACは。そのため以前はAACに対応していなかったソニーやパナソニック、ケンウッド（現・JVCケンウッド）などのデジタルオーディオプレーヤーも現在ではAACに対応している。
+AAC (AAC-LC) の符号化処理は以下の流れで行われる。
+AACはドルビーラボラトリーズも共同開発の一員で、AACロゴはドルビーラボラトリーズの登録商標である（日本国特許庁商標登録番号：第4693750号）。AACにはドルビーのほかAT&T、Fraunhofer IIS、ソニー、ノキアの特許技術が使用されているためソフトウェアメーカーなどから納付されたライセンス料はこれらの企業に分配されている。また、ライセンス管理はドルビーの子会社Via Licensingが行っている。
+なおMPEG-4 AACが含まれるMPEG-4 AudioのカテゴリにはNTTサイバースペース研究所が開発したTwinVQが存在するが、これはAACとは別物である。
+AACやHE-AACは下記に採用されており、実際に利用されている。

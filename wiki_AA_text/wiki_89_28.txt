@@ -1,0 +1,9 @@
+Joint Photographic Experts Group
+Joint Photographic Experts Groupは、画像ファイルフォーマットであるJPEG、JPEG 2000、JPEG XR標準を作成した、ISO/IEC JTC 1/SC 29とITU-Tの合同グループである。
+ISO/IECにおいては、ISO/IEC JTC 1/SC 29/WG 1の2つのサブグループのうちの1つである。ITU-Tでは、その作業はの領域に属する。
+ISO/IEC JTC 1/SC 29/WG 1は、ITU-T研究グループ16(SG16)（前は研究グループ8(SG8)と協力して、JPEGおよびJBIG標準を担当している。組織の範囲には、Joint Photographic Experts GroupとJoint Bi-level Image Experts Groupの両方の作業が含まれる。
+1983年4月に、ISOはテキスト端末に写真品質の画像を追加する作業を開始した。1980年代半ばには、CCITT（現ITU-T）とISOのそれぞれが画像符号化のための標準化グループを持っていた。CCITT研究グループVIII(SG8)（Telematic Services）とISO TC97/SC2/WG8（Coding of Audio and Picture Information）である。どちらも画像による通信をターゲットにしていた。1986年、CCITTとISOの合同でJoint Photographic Expert Groupを創設することが決定された。JPEG委員会は1986年に創設された。1988年には、CCITTとISOの合同でJoint Bi-level Image Group (JBIG)を創設することが決定された。
+このグループは、北米、アジア、ヨーロッパで毎年3回開催される。グループはしばしばJBIG委員会と共同で会合する。
+Joint Bi-level Image Experts Group(JBIG)は、Joint Photographic Experts Groupと同じワーキング・グループ （ISO/IEC JTC 1/SC 29/WG 1）の2つ目のサブグループであり、二値画像に重点を置いている。JBIGはJBIG標準とJBIG2標準を作成した。
+JPEG (Joint Photographic Experts Group)は、各種の標準を開発しており、それらはITU-TとISO/IECの両方またはどちらかによって発行されている。
+JPEG標準は、複数の部(part)で構成されている。各部は、仕様全体の特定の側面をカバーしている。公開されたJPEG標準の一部は、後の改訂版や新版によって改訂された。JPEGによって開発された、および開発中の規格を以下の表に示す。

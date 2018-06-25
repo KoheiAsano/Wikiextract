@@ -1,0 +1,2 @@
+NAPLPS
+NAPLPS（North American Presentation Level Protocol Syntax）はビデオテックスの国際規格のひとつ。AT&Tによってカナダ政府の作ったTelidonシステム方式を基に作られたもの。ニフティサーブの天気予報で使われたり、キャプテンシステムではこれをもととした方式で情報が提供されていた。

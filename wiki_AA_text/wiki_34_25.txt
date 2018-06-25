@@ -1,0 +1,101 @@
+Delphi
+Delphi（デルファイ）は、コンソール (CUI)、デスクトップ (GUI)、Web、モバイルアプリケーション開発のための統合開発環境 (IDE) である。
+DelphiのコンパイラはPascal を独自に拡張した Object Pascal (Delphi 言語) を用いて、プラットフォーム毎にネイティブコードを生成する。対応プラットフォームはWindows、macOS、iOS、Android、Linux。
+元々DelphiはボーランドがTurbo Pascal / Borland Pascalの後継として開発したWindows用のRADツールである。C++ Builderとは多くのコアコンポーネント、特にIDEとVisual Component Library (VCL) を共有していたが、Borland Developer Studio 2006の登場まではそれぞれ独立した製品だった。
+2006年にボーランドの開発ツール部門がコードギアとして完全子会社化され、2008年にエンバカデロ・テクノロジーズに買収された。2015年10月に、上記エンバカデロ・テクノロジーズがアイデラにより買収される発表がなされた。
+本項では Delphi Prism として開発されていた 「Embacardero Prism（エンバカデロ プリズム）」 についても述べる。
+DelphiはWindows、macOS、iOS、Android向けアプリケーションを開発するための統合開発環境 (IDE) である。
+「コンポーネント」 と呼ばれるソフトウェア部品を 「フォーム」 や 「データモジュール」 に貼り付ける手法により、ユーザインタフェースやアプリケーションロジックの設計を視覚的に行え、ソフトウェアの開発を迅速に行える。またコンポーネント自体も Delphi で開発可能であり、その開発環境自身も利用者（開発者）のニーズに従って拡張可能である。コンポーネント指向プログラミングを体現した開発環境といえる。
+Delphiで使われるコンポーネントのフレームワークには 「Visual Component Library (VCL)」、「Component Library for Cross-Platform (CLX)」、「FireMonkey (FMX)」 がある。このフレームワークを用いてC++言語でのWindows向けソフトウェア開発を実現したものが 「C++ Builder」 である。
+のIDEでは見慣れた「イベントハンドラに対してオブジェクトイベントを delegation (委譲) する」いわゆる2Way-Toolの手法はボーランドの特許である（発明者はアンダース・ヘルスバーグ）。
+Delphiはバージョン1から5までは順調にバージョンアップを繰り返し、それなりに人気もあったが、Delphi 6 / 7ではドキュメントの品質が明らかに低下し、Delphi 8以降.NET FrameworkやC#もサポートした巨大な開発ツール (RAD Studio) に発展したが、製品自体の品質が落ちてしまい、利用者を急速に失った。その後、Delphiはボーランドのツール部門買収などの混乱の中で低迷が続いていたが、エンバカデロ・テクノロジーズのもとでC#と.NET Frameworkのサポートを廃止しスリム化、Delphi 2009で再びWin32用のツールとして再出発を果たした。その後Unicodeサポートなど多くの機能拡張も行われ、macOS、iOS、Android、Linux向けのアプリケーション開発にも対応、品質も安定してきており、往年の実力を取り戻しつつある。
+「Delphi」 とは、ギリシャの古代都市 「デルフォイ」 に由来する。デルフォイにあるアポロン神殿は、その託宣 (Oracle) を時の為政者だけではなく、一般人にも授けたことから人気が集まり、その門前町である都市国家デルフォイは古代の人気観光スポットだった。
+当初はOracle Databaseサーバのフロントエンドとしての採用を目論んでおり、それにちなんだコードネームとしてDelphiが選ばれた。AppBuilderという製品名で発売しようとしたがノベル製品の名称 (Visual AppBuilder) と競合してしまい、議論と市場調査の結果、コードネームがそのまま製品名となった。
+Delphi（製品名: Delphi for Windows、コードネーム: Delphi）は1995年9月に発売された。最初のバージョンはWindows 3.1用として開発された。Turbo Pascal譲りのオブジェクト指向をその土台に据えつつ、インタプリタ動作と錯覚してしまうほどの高速なコンパイラを備え、「コンポーネント」 と呼ばれる設計部材による視覚的（ビジュアル）開発手法を採用するというDelphiの基本的な性格は、この時既に定まっており、この画期的な製品はソフトウェア開発者から大きな注目を浴びた。Delphi 1はシリーズを通して唯一の16ビット開発環境としての側面も併せ持っている。なお、当初の日本語版には英語版で提供されていたDatabase DesktopやInterBaseなどが含まれておらず、価格も安価（29,800円）に設定されていた。その後、これらのツールを含む Delphi and Database Tools（68,000円）が発売された。
+「Delphi 2」（コードネーム: Polaris）は1996年に発売された。これ以降、Delphiは開発対象をWindows 95に代表される32ビットWindows (Win32) に移した。マイクロソフトのVisual BasicとVisual C++の長所を兼ね備えた開発環境として人気を博し、その後も順調にバージョンアップを繰り返した。
+「Delphi 3」（コードネーム: Ivory）は1997年に発売された。Delphi 1 発売以来の様々な問題点をほぼ改修し、パッケージと呼ばれるDelphi独自のDLL形式をサポート、ActiveXコントロールの開発をサポートし、ウェブアプリケーション開発機能を提供した。完成度の高いバージョンであり、その後のDelphiの原型となった。
+「Delphi 3.1」 はDelphi 3のマイナーバージョンアップ版で、Delphi 3ユーザーにはDelphi 3.1のCD-ROMが郵送された。
+「Delphi 4」（コードネーム: Allegro）は1998年に発売された。NT サービスアプリケーションの開発、CORBAをサポート。
+「Delphi 5」（コードネーム: Argus）は1999年に発売された。ADO対応 (ADO Express)、COMオブジェクトコンポーネントラッパーを提供。
+「Delphi 6」（コードネーム: Iliad）は2001年7月9日に発表された。
+SOAPを利用するWebサービスの作成機能、コンポーネントベースでWeb画面が設計できるWebSnap、新しいデータベースフレームワークdbExpress (DBX)、Linux版Delphi (Kylix) と共通のComponent Library for Cross-Platform (CLX) などを搭載した意欲作。BDE (Borland Database Engine) は、このDelphi 6付属のバージョンである5.2が最終版となった。Windows 2000に対応。日本でも無償のPersonal版が提供された。
+「Delphi 7」（コードネーム: Aurora）は2002年8月22日に発表された。
+Delphi 1以来の伝統的なIDEを用いた最後の製品で、完成度の面で評価が高い。Windows XPに対応。
+Professional版以上では「Delphi 7 Studio」の名称を使用。6で無償であったPersonal版は有償に変更になった。IntraWeb、RaveReportを搭載。Delphi for .NETのプレビュー版を添付。Professional版以上にはObject Pascal (Delphi) 版のKylix 3が付属した。ただし、Kylix 3は最後のKylixであり、CLXサポートもDelphi 7を最後に廃止されている。エンバカデロ・テクノロジーズによるDelphi 7の再販版が存在するが、こちらも「Borland Delphi 7」の名称を用いていた。ただし、"Studio" の文字は外された。
+Win9xで動作するDelphiとしては最終版となる。そのため、段階マイグレーションのチェックポイントとして有用であり、現在でも最新版を購入すれば「Delphi 7.1」を入手する事が可能となっている（サポートは終了している）。
+「Delphi 8 for the Microsoft .NET Framework」（コードネーム: Octane）は2003年11月3日に発表された。
+.NET Frameworkに対応した「Delphi for the Microsoft .NET Framework (Delphi.NET)」の最初の製品だった。それ以前のDelphiの言語構文を殆ど変更する事なく.NETアプリケーションを開発できる。「Galileo」と呼ばれる新しいIDEになり、Microsoft Visual Studioと似たユーザインタフェースや外観が導入されたが、品質はお世辞にも良いとは言えなかった。.NET専用という点でDelphiの系譜の中ではやや異端のバージョンである。Win32の開発の為にDelphi 7.1が付属した。また、DelphiのIDEはDelphi (VCL) で書かれており、IDEを拡張するためのWin32コンパイラとして IDE Integration pack for Delphi 8 が用意された。
+「Delphi 2005」（コードネーム: DiamondBack、内部バージョン: 9.0）は2004年11月4日に発表された。
+ボーランドのC#言語開発環境である「C# Builder」とWin32開発用および.NET開発用の「Delphi for .NET」が統合された。より正確には、「Delphi 8 (Delphi for .NET)」と「C# Builder」を統合し、そこへWin32開発用である「Delphi for Win32」を追加したものがDelphi 2005である。Delphi 2005には無償版が用意されていたが、実際に提供されたのは欧州など限られた国のみだった。この製品ではIDEが大幅に強化された。UMLモデリング機能 (Borland Together) や構成管理機能 (Borland StarTeam)、リファクタリング機能の導入などである。また言語にもcodice_1 ... codice_2構文（C#のcodice_3 に相当）やcodice_4命令などが追加された。
+「Borland Developer Studio 2006」（コードネーム: DeXter）は2005年11月24日に発表された。
+「Delphi 2006」という名称の製品は単体では存在しない。他言語との統合版 (Borland Developer Studio 2006) と単体製品 (Turbo Delphi) で名称が異なっている。
+「Delphi 2005」の後継製品であり、Win32開発環境として「Delphi 2006 for Win32」（内部バージョン: 10.0）が、.NET開発用の環境として「Delphi 2006 for .NET」と「C# Builder」が提供された。さらにボーランドのC++言語によるVCL開発環境 「C++ Builder」 が統合されている。
+「Turbo Delphi」（内部バージョン: 10.0）は2006年9月6日（英語版は8月8日）に発表された。これは「Borland Developer Studio 2006」からWin32開発用のDelphi for Win32を単体として分離したものである。Delphi 2006 Update 2とほぼ同等の機能を持ち、エディションとしてはProfessionalに相当する。同様に「Delphi 2006 for .NET」、「C++ Builder」、「C# Builder」も単体分離され、それぞれ 「Turbo Delphi for .NET」、「Turbo C++」、「Turbo C#」の名称で同時リリースされた。無償版 (Turbo Delphi Explorer / Turbo Delphi for .NET Explorer / Turbo C++ Explorer / Turbo C# Explorer) も提供された。Turboシリーズは他のTurbo製品と同時にインストールする事はできず、「Borland Developer Studio 2006」とも共存できない。
+FastMM相当のメモリマネージャに変更され、クラスヘルパー等の新しい言語機能も追加されている。
+2007年2月21日に 「Delphi 2007 for Win32」（コードネーム: Spacely、内部バージョン: 11.0）が発表された。
+製品名が示す通り、Win32開発用の環境である。Windows Vistaに対応。
+2007年9月6日にはこの他に.NET開発用の「Delphi 2007 for .NET」を含む統合版「CodeGear RAD Studio 2007」（コードネーム: Highlander）が発表された。.NET 2.0に対応。なおC# BuilderやDelphi for .NETにおけるWinformのサポートは打ち切られた。
+その後、2007年10月10日に「Delphi 2007 for Win32 R2」が発表された。これは「Delphi 2007 for Win32 (Update 3)」に、「BlackFish SQL（旧JDataStore）」を追加した物である。
+内部コード体系がShift_JIS (ANSI) であるDelphiとしては最終版となる。旧バージョンとの互換性も高く、Windows Vista対応が可能なため、マイグレーション先としても、段階マイグレーションのチェックポイントとして有用なバージョンである。そのためか、2017年時点においてもサポートは継続されており、現在でも最新版を購入すれば「Delphi 2007 for Win32 (R2)」を入手する事が可能である。
+2008年8月26日に「Delphi 2009」（コードネーム: Tiburón、内部バージョン: 12.0）が発表された。
+長年の懸案であった VCLとRTLのUnicode化、ジェネリクスや匿名メソッドの導入など、Delphiにとって大きな転機といえるバージョンアップだった。"for Win32" の文字はないがWin32開発用である。
+2008年12月2日には.NET開発用の「Delphi Prism」を含む統合版「CodeGear RAD Studio 2009」が発表された。旧来のDelphi for .NETは廃止になっている。Delphi Prism については後述する。
+2009年8月25日に「Delphi 2010」（コードネーム: Weaver、内部バージョン: 14.0）が発表された。
+Windows 7に正式対応。タッチインタフェースやマウスジェスチャーの制作支援機能、オープンソースDBであるFirebirdのサポート、RTTIの強化、IDEの改良（言語切り替え機能、Delphi 7以前のIDEにあったコンポーネントツールバーの復活など）が盛り込まれた。開発環境をインストールするOSとしてWindows 2000以前はサポートされなくなった。
+2010年9月2日に「Delphi XE」（コードネーム: Fulcrum、内部バージョン: 15.0）が発表された。
+XEは "Cross Platform Edition" の略である。名称通りクロスプラットフォーム開発環境を目指して開発が進められたものの、不完全であったため、クロスプラットフォーム機能の搭載は見送られている。結果、前バージョンとの機能差はあまりなくなってしまっているが、純粋なWin32アプリケーション開発環境としては最終版であるため、段階マイグレーションのためのチェックポイントとして有用である。
+2011年2月1日にはStarterエディションが追加発表された。「Turbo Delphi」 以来のエントリー向けエディションであり、無償ではないがコンポーネントのインストールが可能、1,000 USドルを超えない範囲であれば商用利用可能など、制限は大幅に緩和されている。ただし、Starterには旧Delphiのライセンスは付属しない。また、同時利用は同一サブネット内において5ライセンスまでとされている。このため教室での利用は向かないとされており、アカデミック版の提供はない。Starter版には通常価格とアップグレード価格が用意されているが、同社または他社の開発ツールユーザーであれば「誰でも」アップグレード版を購入できる。C++ Builder Starterとの共存はできず、RAD StudioにもStarterは提供されない。
+Starter版とアカデミック版を除き、Delphi 7、2007、2009、2010のライセンスが付属する。
+2011年9月1日に「Delphi XE2」（コードネーム: Pulsar、内部バージョン: 16.0）が発表された。
+新たにFireMonkeyフレームワークを導入したことにより、HDや3Dに対応した高品質なユーザインタフェースの設計や、Windows 64bit、Mac OS X (Intel x86)、iOS向けのマルチプラットフォームアプリケーションの開発が可能になった。但し、iOS開発は実際にはFree Pascal (FPC) を使ったツールチェインであり、後述するXE4以降のiOS開発環境との互換性は乏しい。マルチプラットフォーム化によりVCL / FMX / RTLのユニットで、System.TypesやVcl.Stylesのような、ドットで接頭辞を連結する命名規則（ユニットスコープ）を使うようになったため、以前のバージョンにソースコードを移植する場合には注意が必要である。Windows以外のアプリケーションのデバッグ及びデプロイ（配置）には新しいリモートデバッガである 「プラットフォームアシスタントサーバー (PAServer)」 を利用する（デバッグ対象アプリケーションがWindowsであっても、リモートにあるPCのアプリケーションをデバッグするにはやはりPAServerが必要となる）。また、製品エディションとしてEnterpriseとArchitectの間にUltimateが追加された。
+搭載されるコンパイラはDCC32 (Windows 32bit), DCC64 (Windows 64bit), DCCOSX (Mac OS X) の3つとなった（ツールチェイン用のFPCを除く）。
+Starterとアカデミック版を除き、Delphi 7、2007、2009、2010、XEのライセンスが付属する。
+2012年9月4日に「Delphi XE3」（コードネーム: WaterDragon、内部バージョン: 17.0）が発表された。
+新たに「Metropolis UI」を導入したことにより、タッチ対応、ライブタイルサポートなどを実装したWindows 8デスクトップアプリケーションの開発が可能になった。ただしWindowsランタイム (WinRT) には対応しない。OS X v10.8 (Mountain Lion) アプリケーション開発に対応。Visual LiveBindingが追加されてデータとユーザインタフェースの紐付けが容易になった。Enterprise版以上のエディションに新しいデータベースフレームワークである FireDAC が追加された（SQLite を標準サポート）。ProfessionalエディションでFireDACを利用するには、別途「FireDAC Client/Server Pack」を購入しなければならない。XE2にあったFPCツールチェインなiOS開発環境は廃止されている。開発環境をインストールするOSとしてWindows XP以前はサポートされなくなった。
+Starterとアカデミック版を除き、Delphi 7、2007、2009、2010、XE、XE2のライセンスが付属する。
+2013年4月23日に「Delphi XE4」（コードネーム: Quintessence、内部バージョン: 18.0）が発表された。iOS開発機能が追加された。これはXE2のものとは異なり、コンパイルにFPCを必要としないが、デバッグ及びデプロイのためにOS X搭載のIntel Macが必要となる。Professional版でモバイル開発 (iOS) を行うにはMobile Add-On Packを別途購入する必要がある。前バージョンのXE3から7ヶ月でのバージョンアップとなったため、XE3からのバージョンアップ料金はキャンペーン価格ながら格安の6,000円となった（モバイル開発環境を含まないProfessional 版の場合）。PAServer 実行環境としてのMac OS X v10.6 (Snow Leopard) はサポートされなくなった。
+搭載されるコンパイラは DCC32 (Windows 32bit), DCC64 (Windows 64bit), DCCOSX (OS X), DCCIOS32（iOSシミュレータ用）, DCCIOSARM（iOSデバイス用）の5つとなった。
+Starterとアカデミック版を除き、Delphi 7、2007、2009、2010、XE~XE3のライセンスが付属する。
+2013年9月11日に「Delphi XE5」（コードネーム: Zephyr、内部バージョン: 19.0）が発表された。
+OS X v10.9 (Mavericks)、iOS 7アプリケーション開発に対応。Android開発機能が追加された。AndroidアプリケーションのデバッグにはPAServerを必要としない。原則としてARM v7以降のNEON対応SoCを載せた端末であれば、Delphi製アプリケーションを実行できる。モバイル開発 (iOS / Android) を行う場合、Professional版ではMobile Add-On Packを別途購入する必要がある。Professional版にもローカル接続専用ではあるがFireDACが追加された。Professional版でFireDAC（リモート接続）を使うにはFireDAC Client/Server Packを別途購入する必要がある。
+搭載されるコンパイラはDCC32 (Windows 32bit), DCC64 (Windows 64bit), DCCOSX (OS X), DCCIOS32（iOSシミュレータ用）, DCCIOSARM（iOSデバイス用）, DCCAARM (Android) の6つとなった。
+Starter 版を除き、Delphi 7、2007、2009、2010、XE~XE4 のライセンスが付属する。
+2014年3月1日にRAD StudioのFireMonkey専用開発環境である「Appmethod」が発表された。AppmethodにはObject Pascal (Delphi) 言語 / C++言語が含まれるが、VCLを用いたソースコードをコンパイルする事はできない。AppmethodはRAD Studio / Delphi / C++ Builderとは異なり、プラットフォーム毎 / 年のサブスクリプション契約となっている。最初のリリースである「Appmethod 1.13」はXE5相当であり、以降RAD Studioの新版がリリースされるのとほぼ同時期にAppmethodもリリースされるようになった。Appmethodは同等バージョンのRAD Studio / Delphi / C++ Builderとは同時にインストールできない。また、このAppmethodのリリースにより、ドキュメントなどで使われるDelphi の「言語の名称」が「Object Pascal言語」と記述される事が多くなった。
+2014年4月16日に「Delphi XE6」（コードネーム: Proteus、内部バージョン: 20.0）が発表された。
+Windows 8.1に対応。デザインおよびパフォーマンスを改善した「高品質リリース」。
+Starter版を除き、Delphi 7、2007、2009、2010、XE~XE5のライセンスが付属する。
+2014年9月2日に「Delphi XE7」（コードネーム: Carpathia、内部バージョン: 21.0）が発表された。
+OS X v10.10 (Yosemite)、iOS 8アプリケーション開発に対応、FireMonkeyにFireUIと呼ばれる機能が追加された。これはフォームを各デバイス向けに最適化されたユーザインタフェースにカスタマイズするものである。開発環境をインストールするOSとしてWindows Vista以前はサポートされなくなり、PAServer実行環境としてのMac OS X v10.7 (Lion) もサポートされなくなった。OS XおよびiOS向けアプリケーションの開発を行うのにSDKが必要となったため、コンパイルや構文チェックを行うだけでもMacの実機が必要となっている。また、このバージョン以降、BDE (Borland Database Engine) はデフォルトでインストールされなくなった。
+Starter 版を除き、Delphi 7、2007、2009、2010、XE~XE6 のライセンスが付属する。
+2015年4月7日に「Delphi XE8」（コードネーム: Elbrus、内部バージョン: 22.0）が発表された。
+作業実行支援ツール 「Castalia」 とパッケージマネージャ 「GetIt」 が統合された。Android 5.x (Lolipop) アプリケーション開発に対応、但しAndroid 2.3x (Gingerbread) には非対応となった。さらにiOSデバイス用64ビットコンパイラも追加されている。モバイル開発 (iOS / Android) を行う場合、Professional版ではMobile Add-On Packを別途購入する必要がある。
+搭載されるコンパイラは DCC32 (Windows 32bit), DCC64 (Windows 64bit), DCCOSX (OS X), DCCIOS32（iOSシミュレータ用）, DCCIOSARM（iOSデバイス用）, DCCIOSARM64 （iOSデバイス用64ビット）, DCCAARM (Android) の7つとなった。
+Starter版を除き、Delphi 7、2007、2009、2010、XE~XE7のライセンスが付属する。
+2015年9月1日に「Delphi 10 Seattle」（コードネーム: Aitana、内部バージョン: 23.0）が発表された。
+Windows 10に対応。OS X v10.11 (El Capitan)、iOS 9 アプリケーション開発に対応、Androidのサービスアプリケーションも作成可能となった。IDEが利用可能なメモリが倍増したため、大規模なプロジェクトをビルドしてもメモリ不足エラーが発生しにくくなっている。前バージョンまで続いた XE ナンバリングが廃止されている。
+Starter版を除き、Delphi 7、2007、2009、2010、XE~XE8のライセンスが付属する。
+2016年4月20日に「Delphi 10.1 Berlin」（コードネーム: BigBen、内部バージョン: 24.0）が発表された。
+Android 6.0、iOS 10、macOS v10.12 (Sierra) アプリケーション開発に対応。FireMonkeyのフォームデザイナも独立表示可能になった（デフォルトでは埋め込みデザイナ）。クラスヘルパーの仕様変更が行われている。インストーラの改良により、インストールオプションによってはインストール時間が大幅に短縮されるようになった。このバージョンからUltimateエディションが廃止されている。
+2016年8月22日以降、Starter Editionが無償で入手できるようになっている。2006年のTurbo Delphi Explorer以来、10年ぶりの無償版である。またStarter EditionはTurbo Explorerとは異なり、複数のパーソナリティ（言語）が共存できるため、DelphiとC++ Builderを同じ環境で利用する事が可能となっている。コンポーネントのインストールにも制限がない。
+Starter版を除き、Delphi 7、2007、2009、2010、XE~XE8、10 Seattleのライセンスが付属する。
+2017年3月22日に「Delphi 10.2 Tokyo」（コードネーム: Godzilla、内部バージョン: 25.0）が発表された。
+Enterprise 以上の SKU に LLVM エンジンベースの Linux 64ビット コンパイラが追加された (Ubuntu 16.04 LTS / RedHat Enterprise Linux 7 対応)。また、インストーラの改良により、インストール時間が大幅に短縮されるようになった。
+搭載されるコンパイラは DCC32 (Windows 32bit), DCC64 (Windows 64bit), DCCOSX (OS X), DCCIOS32（iOSシミュレータ用）, DCCIOSARM（iOSデバイス用）, DCCIOSARM64 （iOSデバイス用64ビット）, DCCAARM (Android), DCCLINUX64 (Linux 64bit) の8つとなった。
+Starter版を除き、Delphi 7、2007、2009、2010、XE~XE8、10 Seattle、10.1 Berlinのライセンスが付属する。
+今後、iOS及びAndroid対応の強化とともに、macOS (64ビット) コンパイラの追加を盛り込む予定であると、2017年のロードマップにてアナウンスされている。
+DelphiのVCL / CLX / FMXは、コンポーネントと呼ばれるソフトウェア部品の集合で構成され、プログラマはこのコンポーネントを組み合わせて視覚的にアプリケーションを開発する方式となっているが、ユーザープログラマがコンポーネントを自由に作成して開発環境自体に組み込み、開発環境を拡張することが可能となっている。
+多くの有償／無償のコンポーネントが作成・公開され、開発環境を容易に拡張できるシステムはユーザープログラマからの支持も高いが、Delphiのバージョン毎に互換性が無い場合も多く、コンポーネントのソースコードが公開されている場合は使用している Delphiのバージョンに合わせて自分でコンポーネントのコードを修正する必要がある。
+有償 / 無償の製品、シェアウェア、フリーウェアが多数作成されている。Delphi 自身も Delphi によって作られている。
+かつてボーランドから提供されていたVCL Scannerというツールを使うと、DelphiまたはC++ Builderで作成されたアプリケーションを調べることができた。現在では実行ファイルをダウンロードできないが、Delphi 5 でコンパイル可能なソースコードが公開されているため、自前で実行ファイルを生成する事ができる。
+Embarcadero Prism（エンバカデロ プリズム）は、エンバカデロ・テクノロジーズが販売する.NET向けの新たなIDEである。以前はDelphi Prismと呼ばれていたが、XE2より名称からDelphiが外れEmbarcadero Prismとなった。
+Delphi 8以降、Delphiの.NET開発用の環境 (Delphi for .NET) はWin32版のVCLと互換性を持つフレームワークVCL.NETと、マイクロソフトのフレームワークWindows Formsの両方をサポートしていたが、流石に無理があったのかDelphi 2007ではWindows Formsのサポートが打ち切られた。
+Delphi 2009よりエンバカデロ・テクノロジーズは方針転換を行い、Delphi for .NET (Delphi.NET) を置き換える決定を下した。こうして生まれたPrismは当初Delphiの名を冠してはいたものの、実際はRem Objectsの言語コンパイラOxygene (以前はChromeと呼ばれていた) とマイクロソフトのIDEを使用する全く新しい製品である。PrismではVCL.NETはサポートされず、フレームワークのサポートはWindows Formsのみとなっている。
+Delphi for Win32 (Delphi Win32) とは異なり、Prismは更新が頻繁に行われる。単体製品版には初年度分の年間メンテナンス & サポートが付属しており、翌年度以降も契約更新が可能で、この契約期間中であればいつでも最新版を入手することができる。このため、バージョンアップ版の設定がない。また、一度契約が切れてしまうと新規での製品購入が必要である。さらにRAD Studio版には初年度分の年間メンテナンス & サポートも付属していないため、購入年度から加入していないとメンテナンスリリースを入手できないので注意が必要である。
+Embarcadero Prism は XE3 (XE3.2) が最終バージョンとなり、RAD Studio XE4 以降に含まれず、スタンドアロン製品としても提供されなくなった。サポートとメンテナンスのアップデートも2013年8月で終了している。エンバカデロ・テクノロジーズは、今後のPrismの最新版はRem Objectsから購入するようにアナウンスしている。なおRem ObjectsはPrismの名称を用いず、Oxygeneとする方針を打ち出している。
+これらの他、メンテナンスリリースが存在する。
+「Delphi Prism 2009」 は2008年12月2日に発表された。Prismの最初のバージョン。
+「Delphi Prism 2010」 は2009年8月25日に発表された。クロスプラットフォーム開発機能により、Linux用のアプリケーション開発をサポート。
+「Delphi Prism 2011」 は2010年6月3日に発表された。クロスプラットフォーム開発機能がさらに拡張され、Mac OS X、iOS向けのアプリケーション開発をサポート。
+「Delphi Prism XE」 は2010年9月2日に発表された。Delphi Prism 2009、2010、2011 のライセンスが付属する。
+「Embacadero Prism XE2」 は2011年9月1日に発表された。Delphi Prism 2009、2010、2011、XEのライセンスが付属する。
+「Embacadero Prism XE3」 は2012年9月4日に「Embarcadero RAD Studio XE3」の一部として発表された。Delphi / Embacadero Prism 2009、2010、2011、XE、XE2のライセンスが付属する。最後のメジャーリリースとなった。

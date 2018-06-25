@@ -1,0 +1,4 @@
+Internet Assigned Numbers Authority
+Internet Assigned Numbers Authority（IANA、アイアナ）とはインターネットに関連する番号を管理する組織である。IPアドレス・ドメイン名・ポート番号等の標準化・割り当て・管理などを行う。アメリカの南カリフォルニア大学のISI（Information Sciences Institute）にある。
+ジョン・ポステルが中心となって始めた組織。運営費用の一部がアメリカ政府により援助されていたが国際的な機関となるために1999年、ICANNの援助によって活動する組織に変更された。現在、ICANNの下部組織。
+XML宣言に記述するエンコーディングの名前は、IANAに登録されたキャラクタセット名が使用される。

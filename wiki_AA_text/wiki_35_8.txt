@@ -1,0 +1,7 @@
+Request for Comments
+Request for Comments（リクエスト フォー コメンツ、略称：RFC）はIETF（Internet Engineering Task Force）による技術仕様の保存、公開形式である。内容には特に制限はないが、プロトコルやファイルフォーマットが主に扱われる。RFCとは「コメント募集」を意味する英語の略語であり、もともとは技術仕様を公開し、それについての意見を広く募集してより良いものにしていく観点から始められたようである。全てのRFCはインターネット上で公開されており、誰でも閲覧することができる。
+RFCは、1968年ごろ、スティーブ・クロッカー が考案したと言われており、はじめのRFCは1969年4月7日の日付となっている (RFC 1) 。その後情報科学研究所 (ISI) のジョン・ポステルにより管理される。RFCの歴史についてはRFC 2555に"30 Years of RFCs"としてまとめられている。
+すべての RFC が標準というわけではない（RFC 1796 "Not All RFCs are Standards"）。各 RFC には標準化プロセスにおける位置付け (status) が定められている。位置付けは「情報 (Informational)」、「実験的 (Experimental)」、「現状で最良の慣行 (Best Current Practice, BCP)」、「標準化過程 (Standards Track)」、「歴史的 (Historic)」のいずれかである。
+「標準化過程」はさらに「標準への提唱 (Proposed Standard, PS)」、「標準への草稿 (Draft Standard, DS)」、「インターネット標準 (Internet Standard, STD)」に分けられる（詳しくはインターネット標準を参照のこと）。
+なお、非常に古い RFC には「不明 (unknown)」という位置付けのものがあり、もし同じ文書が現在公開されるとしたらどの位置付けになるかは明らかでない。
+毎年、エイプリルフールには、ジョーク的な内容を含むRFC（Joke RFC、ジョークRFC）が公開される。また、インターネットに多大な貢献があった人への追悼のRFCが公開されたこともある。

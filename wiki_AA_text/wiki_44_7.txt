@@ -1,0 +1,13 @@
+ECMAScript
+ECMAScript（エクマスクリプト）は、JavaScriptの標準であり、Ecma Internationalのもとで標準化手続きなどが行われている。
+Ecma Internationalのほか、ISO/IEC JTC 1からもISO/IEC 16262として標準化されている。日本もJIS X 3060としてJIS化している。
+ECMAScript仕様は、Ecma InternationalにてECMA-262という規格番号で標準化されている。改訂にあたっては版 (edition) が更新されている。
+6th editionから、「ECMAScript 2015」仕様の名称に発行年が付加されることになった。以降、ECMAScriptは毎年改訂されることになり、以降特定の版を指す場合は、edition名ではなく年号つきの仕様書名で呼ばれることが推奨されている。
+ECMAScriptにはいくつかの拡張が存在する。
+EcmaはECMAScriptのための "Compact Profile" も定義した — ES-CP、あるいはECMA 327として知られる — リソースの厳しいデバイス用にデザインされている。ECMAScriptのいくつかの動的な機能(『eval』関数など)はオプションにされている。これにより、処理系はプログラムの振る舞いに対してより多くの仮定ができるようになり、その結果、より良いパフォーマンス・トレードオフを実行時に得ることができるようになる。
+HD DVD standardはECMAScript Compact Profileに準拠し、完全なECMAScriptの支援をより少ないメモリのデバイスで実行できるよう採用している。
+ECMAScript は、ウェブブラウザをはじめとする多くのアプリケーションでサポートされている。DOMとの連携はドキュメントの操作を可能にする。
+ECMAScript 4は過去2回仕様作成が挑戦されたが、仕様がまとまらず、失敗に終わっている。
+2000年〜2003年ごろ行われた。主に、旧Netscape社とマイクロソフトによって行われたが、意見がまとまらずに、打ち切りとなった。この時の案はActionScriptへと引き継がれた。
+2007年〜2008年ごろ、2回目の仕様作成が行われた。大きく機能を追加される予定であったが、意見がまとまらず、2008年8月13日に、小規模の改善にとどまる、ECMAScript 3.1を進めることとなった。仕様は、http://www.ecmascript.org/docs.php にて公開されている。
+以下のような予定があった。

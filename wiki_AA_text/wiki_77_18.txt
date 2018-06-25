@@ -1,0 +1,3 @@
+Java 3D
+Java 3Dは、Java向けのシーングラフベースの3D (3次元コンピュータグラフィックス) 拡張APIである。サン・マイクロシステムズが開発し、のちにJogAmp Communityに移管された。Java Media APIの一部とされている。実際の描画はOpenGLやDirectX (Direct3D) などの3Dグラフィックス用APIを呼び出すことによって行なわれる。Java3Dの設計思想はVRMLに大きく影響を受けている。Java.net内のプロジェクトとして活動している。
+Java 3Dを使ったアプリケーションとして、という3Dデスクトップ環境がある。

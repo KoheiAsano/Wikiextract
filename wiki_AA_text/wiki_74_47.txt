@@ -1,0 +1,21 @@
+Java Platform, Micro Edition
+Java Platform, Micro Edition (Java ME)は携帯電話、PDA、テレビのようなのリソースが制限されたデバイスにおけるJavaの小型セット。JSR 68 で規定されている。当初は、Java 2 Platform, Micro Edition (J2ME) という名称だった。
+様々なデバイスに対応するため、コンフィギュレーションとプロファイルと呼ばれるものでAPIを定義している。コンフィギュレーションには次の2つがある。
+携帯電話のような非力なCPUを対象とする。
+Java VMから新たにKVMを開発し、Java Platform, Standard Edition(Java SE)とは一部互換性がないものの最小限の機能で動作するようにしたもの。
+次のようなプロファイルがある。
+携帯電話で最も広く普及しているプロファイル。最新の仕様は"JSR 271: Mobile Information Device Profile 3"、3世代目のMobile Information Device Profile (MIDP3)。そのなかで、全体的な機能拡張の他、デバイス間の相互接続性も拡張されている。MIDP3では、MIDP2の後方互換性も保たれている。
+MIDP上で動く、高レベルなUIライブラリとして、 (LWUIT)も提供されている。
+NTTドコモ社の携帯電話上で実行するJavaアプリケーションのためのプロファイル。
+Information Module Profile (IMP)は、自動販売機や組み込み向け産業機器、セキュリティシステム、シンプルでディスプレイを持たず、ネットワークへの接続が限定されているような組み込みデバイスのためのプロファイルである。もともとは、Siemens MobileとNokiaによって、JSR-195として導入され、IMP 1.0は、MIDP 1.0からユーザインターフェースAPIを除いたサブセットである。
+Connected Device Configurationは、Java SEのサブセットで、その中には、GUI関係を除く、ほとんど全てのライブラリが入っている。CLDCよりもリッチな仕様である。
+カーナビやセットトップボックスなどの中程度の能力をもったCPUを対象にする。
+Foundation Profileは、Java ME Connected Device Configuration (CDC)プロファイルのひとつである。
+このプロファイルは、Java Platform, Standard Edition API全てが実行できるJava仮想マシンを必要とするデバイスで使用することを目的としている。
+典型的な実装では、追加のプロファイルのサポートに応じて、そのAPIのサブセットを使用する。
+この仕様は、Java Community Processのもので開発されている。
+Personal Basis Profileは、Foundation Profileを拡張したもので、軽量なGUI(AWTのサブセット)が含まれている。
+Personal Profileは、Personal Basis Profileをさらに拡張したもので、より完全なAWTのサブセットとappletサポートが含まれている。
+日本の携帯電話ではau（KDDI・沖縄セルラー電話連合）のEZアプリ (Java)、SoftBank(ソフトバンク)のS!アプリ、WILLCOMのJavaアプリがMIDPを採用しており、NTTドコモのiアプリは同社が独自に作成したDoJaプロファイルやStarプロファイルを使っている。各社の機能が少しずつ違うため、現状では互換性は少ない。
+開発は Java SE 上でMicro Edition用の開発ツールを組み合わせて行う。
+APIも必要なものに限って実装する。

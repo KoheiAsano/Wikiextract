@@ -1,0 +1,4 @@
+LMTO
+LMTO法（Linear Muffin-Tin Orbital Method： 線形化されたマフィンティン軌道による方法）は、比較的計算が高速な第一原理バンド計算手法。精度がLAPWより若干劣る。線形化されたバンド計算手法では、ゴーストバンドの問題が生じることがある。平面波を利用するのと違い、原子軌道を直接扱っているため、Hubbardモデルなどへのマップなどが比較的容易にできる。局所的クーロン相互作用による局在性を取り入れたLDA+U法、LDA+DMFT法が最初に適用された手法である。
+FP-LMTO(Full-potential LMTO, FLMTO)は、フルポテンシャル化されたLMTO法のこと。
+TB-LMTO(Tight-binding LMTO)は、強結合近似を基にしたLMTO法のこと。通常のLMTO法やFP-LMTO法より高速だが、精度は劣る場合がある。
